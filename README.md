@@ -1,6 +1,10 @@
-# CatbaSight
+# CatbaSight Windows Application
 
 A user-friendly desktop application for discovering and exploring tourist destinations in Catbalogan City, Philippines. Built with JavaFX, this application provides an intuitive interface for browsing landmarks, beaches, and resorts with detailed information, maps, and interactive features.
+
+## 📸 Demo
+
+![CatbaSight Demo](screenshots/demo.gif)
 
 ## 🌟 Features
 
