@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="421.0" layoutX="23.0" layoutY="44.0" stroke="#134609" strokeType="INSIDE" strokeWidth="4.0" width="450.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f4f4f4" height="50.0" layoutX="148.0" layoutY="22.0" stroke="#d9d9d900" strokeType="INSIDE" width="200.0" />
+      <Label layoutX="191.0" layoutY="24.0" text="Credits" textFill="#134609">
+         <font>
+            <Font name="Arial Bold" size="34.0" />
+         </font>
+      </Label>
+      <VBox layoutX="42.0" layoutY="63.0" prefHeight="295.0" prefWidth="411.0">
+         <children>
+            <Label prefHeight="51.0" prefWidth="418.0" text="• Catbalogan | A Guide to the City. (n.d.). Retrieved November 20, 2023, from https://carta.guide/i/catbalogan/124.759795,11.794587,11?r#get-around" wrapText="true" />
+            <Label layoutX="10.0" layoutY="10.0" text="• Catbalogan – Travel guide at Wikivoyage. (n.d.). Retrieved January 6, 2024, from https://en.wikivoyage.org/wiki/Catbalogan" wrapText="true" />
+            <Label layoutX="10.0" layoutY="44.0" text="• 𝐋𝐀 𝐏𝐈𝐄𝐓𝐀: 𝐂𝐀𝐓𝐁𝐀𝐋𝐎𝐆𝐀𝐍’𝐒 𝐌𝐀𝐑𝐊𝐄𝐑 𝐈𝐍 𝐌𝐄𝐌𝐎𝐑𝐘... - Captivating Catbalogan | Facebook. (n.d.). Retrieved November 20, 2023, from https://www.facebook.com/captivatingcatbalogan/posts/2713301655393542/" wrapText="true" />
+            <Label layoutX="10.0" layoutY="79.0" text="• Nuestra Señora del Santisimo Rosario de Ubanon—Samar’s Loving Queen and Protectress. (n.d.). Nuestra Señora Del Santisimo Rosario de Ubanon - Samar’s Loving Queen and Protectress. Retrieved November 20, 2023, from https://pintakasi1521.blogspot.com/2016/10/nuestra-senora-del-santisimo-rosario-de.html" wrapText="true" />
+            <Label layoutX="10.0" layoutY="147.0" text="• The Rizal Monument at Catbalogan City Plaza—Catbalogan. (n.d.). Retrieved November 20, 2023, from https://wikimapia.org/24731045/The-Rizal-Monument-at-Catbalogan-City-Plaza" wrapText="true" />
+         </children>
+      </VBox>
+      <ImageView fitHeight="75.0" fitWidth="155.0" layoutX="138.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagefiles/GoogleMapsLogo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="155.0" layoutX="250.0" layoutY="387.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagefiles/F4MapLogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

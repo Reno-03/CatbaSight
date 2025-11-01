@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.catbasightapp.MainInterfaceController">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="250.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="50.0" arcWidth="50.0" height="378.0" layoutY="94.0" stroke="TRANSPARENT" strokeType="INSIDE" width="248.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="0.8257575838854818" startX="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.15294118225574493" green="0.529411792755127" blue="0.2666666805744171" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.41960784792900085" green="0.7647058963775635" blue="0.27843138575553894" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Rectangle arcHeight="1.0" arcWidth="1.0" fill="#6bc347" height="46.0" layoutY="230.0" stroke="TRANSPARENT" strokeType="INSIDE" width="248.0" AnchorPane.bottomAnchor="0.0" />
+            <Label alignment="BOTTOM_CENTER" layoutX="44.0" layoutY="94.0" prefHeight="46.0" prefWidth="162.0" text="CatbaSight" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_CENTER" layoutX="19.0" layoutY="141.0" prefHeight="58.0" prefWidth="212.0" text="Your number one campanion for finding tourist destinations in Catbalogan City!" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <ImageView fitHeight="71.0" fitWidth="69.0" layoutX="95.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagefiles/location_icon.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="map_btn" layoutX="38.0" layoutY="251.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="178.0" styleClass="nav-btn" stylesheets="@../../../designPanel.css" text="MAP">
+               <graphic>
+                  <FontIcon iconLiteral="fas-map" iconColor="WHITE" iconSize="30" />
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Line endX="233.99996948242188" endY="214.70001220703125" layoutX="-10.0" layoutY="-1.0" startX="29.900012969970703" startY="214.70001220703125" stroke="WHITE" strokeWidth="2.0" />
+            <Button fx:id="list_btn" layoutX="38.0" layoutY="293.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="178.0" styleClass="nav-btn" stylesheets="@../../../designPanel.css" text="LIST">
+               <graphic>
+                  <FontIcon iconLiteral="fas-list" iconColor="WHITE" iconSize="30" />
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="about_btn" layoutX="38.0" layoutY="336.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="178.0" styleClass="nav-btn" stylesheets="@../../../designPanel.css" text="ABOUT">
+               <graphic>
+                  <FontIcon iconLiteral="fas-question" iconColor="WHITE" iconSize="30" />
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label alignment="BOTTOM_CENTER" layoutX="94.0" layoutY="428.0" prefHeight="23.0" prefWidth="55.0" text="© 2023" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_CENTER" layoutX="50.0" layoutY="451.0" prefHeight="23.0" prefWidth="153.0" text="by Loreen Wilmer Yboa" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Arial Bold Italic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane fx:id="about_form" prefHeight="500.0" prefWidth="668.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d7d6d6" height="500.0" stroke="TRANSPARENT" strokeType="INSIDE" width="653.0" />
+            <AnchorPane fx:id="about_form" prefHeight="500.0" prefWidth="652.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label alignment="TOP_CENTER" layoutX="458.0" layoutY="438.0" prefHeight="19.0" prefWidth="139.0" text="Submitted!" textAlignment="JUSTIFY" textFill="#278744" wrapText="true">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="BOTTOM_CENTER" layoutX="145.0" layoutY="14.0" prefHeight="46.0" prefWidth="362.0" text="About Application" textFill="#0c4b0f">
+                     <font>
+                        <Font name="Arial Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_CENTER" layoutX="61.0" layoutY="75.0" prefHeight="113.0" prefWidth="531.0" text="          The CatbaSight was made by Loreen Wilmer J. Yboa, a second year student under the BS in Computer Engineering. It is a user-friendly Graphical User Interface (GUI) application for finding tourist destinations in Catbalogan City. It provides enough information to each destination. A destination can be considered either a landmark or a beach/resort. A landmark is a distinguishing landscape feature marking a site or location." textAlignment="JUSTIFY" textFill="#0c4b0f" wrapText="true">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_CENTER" layoutX="60.0" layoutY="193.0" prefHeight="34.0" prefWidth="531.0" text="         This application is solely made for academic purposes and is a requirement for the Object-Oriented Programming (OOP) course." textAlignment="JUSTIFY" textFill="#0c4b0f" wrapText="true">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="95.0" layoutX="58.0" layoutY="377.0" stroke="TRANSPARENT" strokeType="INSIDE" width="532.0" />
+                  <Button layoutX="58.0" layoutY="301.0" mnemonicParsing="false" onAction="#loadCredits" prefHeight="58.0" prefWidth="249.0" styleClass="sort-btn" stylesheets="@../../../designPanel.css" text="Credits">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="TOP_CENTER" layoutX="394.0" layoutY="339.0" prefHeight="19.0" prefWidth="139.0" text="Submitted!" textAlignment="JUSTIFY" textFill="#278744" wrapText="true">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="destination_choices" layoutX="464.0" layoutY="297.0" prefHeight="26.0" prefWidth="128.0" />
+                  <Button fx:id="submit_rating_btn" layoutX="337.0" layoutY="336.0" mnemonicParsing="false" onAction="#submitRatingDestination" prefHeight="25.0" prefWidth="253.0" styleClass="sort-btn" stylesheets="@../../../designPanel.css" text="Submit">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font></Button>
+                  <Slider fx:id="rate_slider" blockIncrement="1.0" layoutX="73.0" layoutY="425.0" majorTickUnit="1.0" max="10.0" minorTickCount="0" prefHeight="14.0" prefWidth="375.0" showTickLabels="true" showTickMarks="true" />
+                  <Label alignment="TOP_CENTER" layoutX="91.0" layoutY="270.0" prefHeight="16.0" prefWidth="184.0" text="Who helped the CatbaSight App?" textAlignment="JUSTIFY" textFill="#0c4b0f" wrapText="true">
+                     <font>
+                        <Font name="Arial Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_CENTER" layoutX="345.0" layoutY="270.0" prefHeight="14.0" prefWidth="244.0" text="Give your experience to the destinations!" textAlignment="JUSTIFY" textFill="#0c4b0f" wrapText="true">
+                     <font>
+                        <Font name="Arial Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="rating_choices" layoutX="337.0" layoutY="297.0" prefHeight="26.0" prefWidth="114.0" />
+                  <Label alignment="TOP_CENTER" layoutX="73.0" layoutY="383.0" prefHeight="42.0" prefWidth="368.0" text="This app is still under development. Please give your experience in using the app. " textAlignment="JUSTIFY" textFill="#0c4b0f" wrapText="true">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="48.0" fitWidth="52.0" layoutX="504.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imagefiles/great.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="TOP_CENTER" layoutX="463.0" layoutY="438.0" prefHeight="19.0" prefWidth="139.0" text="Submitted!" textAlignment="JUSTIFY" textFill="#278744" wrapText="true">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="submit_user_rating_btn" layoutX="480.0" layoutY="436.0" mnemonicParsing="false" onAction="#submitUserRating" prefHeight="22.0" prefWidth="96.0" styleClass="sort-btn" stylesheets="@../../../designPanel.css" text="Submit">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+            <AnchorPane fx:id="list_form" layoutX="7.0" layoutY="8.0" prefHeight="500.0" prefWidth="652.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label alignment="BOTTOM_CENTER" layoutX="71.0" layoutY="14.0" prefHeight="46.0" prefWidth="510.0" text="Catbalogan Destinations List" textFill="#0c4b0f">
+                     <font>
+                        <Font name="Arial Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="184.0" layoutY="67.0" mnemonicParsing="false" onAction="#sortByAlphabetically" styleClass="sort-btn" stylesheets="@../../../designPanel.css" text="Sort Alphabetically" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="345.0" layoutY="67.0" mnemonicParsing="false" onAction="#sortByRating" styleClass="sort-btn" stylesheets="@../../../designPanel.css" text="Sort by Rating" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <ListView fx:id="destination_list" layoutX="14.0" layoutY="107.0" prefHeight="378.0" prefWidth="624.0" stylesheets="@../../../designList.css">
+                     <styleClass>
+                        <String fx:value="text" />
+                        <String fx:value="list-cell" />
+                        <String fx:value="my-list-view" />
+                        <String fx:value="image" />
+                     </styleClass></ListView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="map_form" prefHeight="500.0" prefWidth="651.0" visible="false">
+               <children>
+                  <Button layoutX="43.0" layoutY="417.0" mnemonicParsing="false" onAction="#loadDescription" prefHeight="58.0" prefWidth="272.0" styleClass="sort-btn" stylesheets="@../../../designPanel.css" text="Description">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font></Button>
+                  <Button layoutX="341.0" layoutY="417.0" mnemonicParsing="false" onAction="#loadDirections" prefHeight="58.0" prefWidth="272.0" styleClass="sort-btn" stylesheets="@../../../designPanel.css" text="Link to Get Directions">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font></Button>
+                  <ImageView fx:id="map_placeholder" fitHeight="284.0" fitWidth="588.0" layoutX="32.0" layoutY="106.0" pickOnBounds="true" />
+                  <Label fx:id="destination_name" alignment="CENTER" contentDisplay="CENTER" layoutX="30.0" layoutY="14.0" prefHeight="58.0" prefWidth="591.0" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button layoutX="548.0" layoutY="214.0" mnemonicParsing="false" onAction="#nextDestination" prefWidth="54.0" styleClass="next-btn" stylesheets="@../../../designPanel.css">
+                     <graphic>
+                        <ImageView fitHeight="61.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagefiles/next_btn_img.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="32.0" layoutY="213.0" mnemonicParsing="false" onAction="#backDestination" prefHeight="53.0" prefWidth="60.0" styleClass="next-btn" stylesheets="@../../../designPanel.css">
+                     <graphic>
+                        <ImageView fitHeight="57.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagefiles/back_btn_img.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

@@ -1,0 +1,22 @@
+.my-list-view {
+    -fx-background-color: #f0f0f0; /* Set background color */
+    -fx-padding: 20; /* Set padding */
+}
+
+/* Style for the items inside the ListView */
+.my-list-view .list-cell {
+    -fx-background-color: #ffffff; /* Set item background color */
+    -fx-border-color: #cccccc; /* Set item border color */
+    -fx-border-width: 0 0 1 0; /* Set bottom border only */
+
+    -fx-font-family: "Arial"; /* Set font family */
+    -fx-font-size: 14px; /* Set font size */
+    -fx-text-fill: #333333; /* Set text color */
+    /* -fx-font-weight: bold; */
+}
+
+/* Style for the selected item inside the ListView */
+.my-list-view .list-cell:selected {
+    -fx-background-color: rgba(63, 117, 41, 0.9); /* Set selected item background color */
+    -fx-text-fill: #ffffff; /* Set text color for selected item */
+}

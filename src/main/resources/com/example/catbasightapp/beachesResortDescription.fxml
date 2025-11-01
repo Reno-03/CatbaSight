@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.catbasightapp.MapDescriptionController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9fcf97" height="510.0" layoutY="-11.0" stroke="TRANSPARENT" strokeType="INSIDE" width="355.0" />
+      <ImageView fx:id="image_placeholder" fitHeight="248.0" fitWidth="355.0" layoutY="92.0" pickOnBounds="true" />
+      <Label alignment="CENTER" layoutX="96.0" layoutY="14.0" prefHeight="46.0" prefWidth="162.0" text="CatbaSight" textFill="#0e6304">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="369.0" layoutY="45.0" prefHeight="28.0" prefWidth="133.0" text="Description">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="372.0" layoutY="244.0" prefHeight="28.0" prefWidth="104.0" text="Barangay:">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="372.0" layoutY="290.0" prefHeight="28.0" prefWidth="234.0" text="Distance from City Hall:">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#73a46a" height="62.0" layoutY="438.0" stroke="TRANSPARENT" strokeType="INSIDE" width="355.0" />
+      <ImageView fx:id="star_1" fitHeight="35.0" fitWidth="39.0" layoutX="86.0" layoutY="451.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@imagefiles/star_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="star_2" fitHeight="35.0" fitWidth="39.0" layoutX="121.0" layoutY="451.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@imagefiles/star_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="star_3" fitHeight="35.0" fitWidth="39.0" layoutX="161.0" layoutY="451.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@imagefiles/star_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="star_4" fitHeight="35.0" fitWidth="39.0" layoutX="197.0" layoutY="451.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@imagefiles/star_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="star_5" fitHeight="35.0" fitWidth="39.0" layoutX="236.0" layoutY="451.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@imagefiles/star_icon.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="description_placeholder" alignment="TOP_LEFT" layoutX="380.0" layoutY="82.0" prefHeight="156.0" prefWidth="494.0" text="Label" wrapText="true" />
+      <Label fx:id="barangay_placeholder" layoutX="478.0" layoutY="244.0" prefHeight="28.0" prefWidth="254.0" textFill="#0e6304">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="distance_placeholder" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="598.0" layoutY="290.0" prefHeight="28.0" prefWidth="47.0" textFill="#0e6304">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="name_placeholder" alignment="CENTER" contentDisplay="CENTER" layoutX="26.0" layoutY="354.0" prefHeight="73.0" prefWidth="306.0" textAlignment="CENTER" textFill="#0e6304" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="72.0" layoutY="45.0" prefHeight="28.0" prefWidth="212.0" text="Your number one campanion for finding tourist destinations in Catbalogan City!" textAlignment="CENTER" textFill="#0e6304" wrapText="true">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+      <Label layoutX="650.0" layoutY="290.0" prefHeight="28.0" prefWidth="35.0" text="km">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="372.0" layoutY="333.0" prefHeight="28.0" prefWidth="74.0" text="Owner:">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="owner_placeholder" layoutX="453.0" layoutY="333.0" prefHeight="28.0" prefWidth="271.0" textFill="#0e6304">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="contact_placeholder" layoutX="457.0" layoutY="361.0" prefHeight="20.0" prefWidth="134.0" text="Label" wrapText="true">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="371.0" layoutY="390.0" prefHeight="28.0" prefWidth="134.0" text="Price Range:">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="range_placeholder" layoutX="503.0" layoutY="390.0" prefHeight="28.0" prefWidth="271.0" textFill="#0e6304">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="369.0" layoutY="427.0" prefHeight="28.0" prefWidth="153.0" text="Price Average:">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="average_placeholder" layoutX="519.0" layoutY="427.0" prefHeight="28.0" prefWidth="254.0" textFill="#0e6304">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
